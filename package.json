@@ -1,6 +1,6 @@
 {
   "name": "passport-medium",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Passport.js strategy for Medium.com",
   "main": "./lib",
   "scripts": {
