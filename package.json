@@ -1,16 +1,22 @@
 {
   "name": "passport-medium",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Passport.js strategy for Medium.com",
-  "main": "index.js",
+  "main": "./lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["passport", "medium", "auth", "oauth", "authentication", "passport-medium"],
+  "keywords": [
+    "passport",
+    "medium",
+    "auth",
+    "oauth",
+    "authentication",
+    "passport-medium"
+  ],
   "author": "Hannan Ali <me@hannanali.tech>",
   "license": "ISC",
   "dependencies": {
     "passport-oauth2": "^1.3.0"
-  },
-  "main": "./lib"
+  }
 }
