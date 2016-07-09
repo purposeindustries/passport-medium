@@ -1,9 +1,6 @@
-# passport-google-oauth20
+# passport-medium-oauth20
 
-[![Dependencies](https://img.shields.io/david/jaredhanson/passport-google-oauth2.svg)](https://david-dm.org/jaredhanson/passport-google-oauth2)
-
-
-[Passport](http://passportjs.org/) strategy for authenticating with [Medium](http://www.google.com/)
+[Passport](http://passportjs.org/) strategy for authenticating with [Medium](http://www.medium.com/)
 using the OAuth 2.0 API.
 
 This module lets you authenticate using Mediumm in your Node.js applications.
@@ -14,7 +11,7 @@ unobtrusively integrated into any application or framework that supports
 
 ## Install
 
-    $ npm install passport-google-oauth20
+    $ npm install passport-medium
 
 ## Usage
 
@@ -34,7 +31,7 @@ and OAuth 2.0 tokens.  The client ID and secret obtained when creating an
 application are supplied as options when creating the strategy.  The strategy
 also requires a `verify` callback, which receives the access token and optional
 refresh token, as well as `profile` which contains the authenticated user's
-Google profile.  The `verify` callback must call `cb` providing a user to
+Medium profile.  The `verify` callback must call `cb` providing a user to
 complete authentication.
 
     var MediumStrategy = require('passport-medium').Strategy;
@@ -42,7 +39,7 @@ complete authentication.
     passport.use(new MediumStrategy({
         clientID: MEDIUM_CLIENT_ID,
         clientSecret: MEDIUM_CLIENT_SECRET,
-        callbackURL: "http://www.example.com/auth/google/callback"
+        callbackURL: "http://www.example.com/auth/medium/callback"
       },
       function(accessToken, refreshToken, profile, cb) {
         User.findOrCreate({ mediumId: profile.id }, function (err, user) {
