@@ -1,4 +1,4 @@
-# passport-medium-oauth20
+# passport-medium
 
 [Passport](http://passportjs.org/) strategy for authenticating with [Medium](http://www.medium.com/)
 using the OAuth 2.0 API.
