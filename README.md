@@ -1,5 +1,7 @@
 # passport-medium
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/abdulhannanali/passport-medium.svg)](https://greenkeeper.io/)
+
 [Passport](http://passportjs.org/) strategy for authenticating with [Medium](http://www.medium.com/)
 using the OAuth 2.0 API.
 
